@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css' ) }}">
+    <title>Login cirpitografado</title>
+</head>
+<body>
+    {% with menssagens = get_flashed_messages() %}
+        {% if menssagens %}
+            <div class="error">
+                {% for menssagem in menssagens %}
+                    {{ menssagem }}
+                {% endfor %}
+            </div>
+        {% endif %}
+    {% endwith %}
+    <div id="logindiv">
+        <form action="/cript_login" method="post">
+            <Label id="Lname">Nome</Label>
+            <input type="text" name="nome" id="nome" placeholder="nome">
+            <Label id="Lsenha">Senha</Label>
+            <input type="password" name="senha" id="senha" placeholder="senha">
+            <input type="submit" value="entrar" id="entrar">
+        </form>
+    </div>
+    
+</body>
+</html>

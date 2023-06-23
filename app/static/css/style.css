@@ -1,0 +1,54 @@
+body{
+    background-color: rgb(46, 46, 46);
+    color: rgb(0, 0, 0);
+    font-style: Calibri;
+    font-size: 25px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+input{
+    width: 150px;
+    height: 30px;
+    border-radius: 5px;
+}
+.error{
+    width: 100%;
+    background-color: rgb(175, 59, 59);
+    color: black;
+}
+#logindiv{
+    width: 300px;
+    height: 280px;
+    background-color: aquamarine;
+    border-radius: 15px;
+    position: absolute;
+    top: 150px;
+    left: 35%;
+}
+#nome{
+    position: absolute;
+    top: 55px;
+    left: 65px;
+}
+#Lname{
+    position: absolute;
+    top: 25px;
+    left: 115px;
+}
+#Lsenha{
+    position: absolute;
+    top: 95px;
+    left: 115px;
+}
+#senha{
+    position: absolute;
+    top: 130px;
+    left: 65px;
+}
+#entrar{
+    width: 82px;
+    height: 35px;
+    font-size: 25px;
+    position: absolute;
+    top: 180px;
+    left: 100px;
+}
